@@ -1,0 +1,311 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page {
+  width: 1280px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar-container {
+  width: 100%;
+  height: 50px;
+  background-color: #4e4e4e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-link {
+  margin-left: 94px;
+  font-weight: 700;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav-elem {
+  margin-right: 46px;
+  position: relative;
+}
+
+.main-nav-link-kontakt {
+  margin-right: 90px;
+  cursor: not-allowed;
+}
+
+.main-nav-link:hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+}
+
+/* Landing Page */
+
+.landing-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/tlo.png);
+  background-size: cover;
+  position: relative;
+}
+
+.landing-page-shadow {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/cien.png);
+  display: flex;
+  align-items: center;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  height: 215px;
+  margin-left: 94px;
+  margin-right: 609px;
+}
+
+.text1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.text2 {
+  font-weight: 700;
+}
+
+.button1 {
+  box-sizing: border-box;
+  width: 164px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  transition: color 1s;
+}
+
+.button1:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* About */
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+.about-header {
+  width: 386px;
+  margin-left: 34px;
+  margin-top: 3%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #152d41;
+}
+
+.workers {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.person1-container {
+  display: flex;
+}
+
+.photo1,
+.photo2 {
+  width: 200px;
+  height: 200px;
+  margin: 20px 20px;
+  border-radius: 50%;
+}
+
+.photo1 {
+  background-image: url(../assets/person1.jpg);
+}
+
+.person1,
+.person2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.person1 {
+  align-items: flex-start;
+  width: 866px;
+  height: 104px;
+}
+
+.person1-name,
+.person2-name {
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.person1-about,
+.person2-about {
+  text-align: justify;
+  color: #000;
+}
+
+.person2-container {
+  display: flex;
+}
+
+.person2-container:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.photo2 {
+  background-image: url(../assets/person2.jpg);
+}
+
+.person2 {
+  align-items: flex-end;
+  width: 811px;
+  height: 145px;
+}
+
+.person2-name {
+  text-align: right;
+}
+
+.person2-about {
+  flex-direction: column;
+}
+
+/* Offer */
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #405d78;
+  width: 100%;
+  height: 100vh;
+}
+
+.offer-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 50px;
+  margin-left: 110px;
+}
+
+.services-container {
+  display: grid;
+  width: 740px;
+  height: 440px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  background-color: #f1f1f1;
+  box-shadow: 2px 3px #4e4e4e;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.service {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+}
+
+.service-new {
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e07a64;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+/* Footer */
+
+.footer-container {
+  width: 100%;
+  height: 71px;
+  background-color: #4e4e4e;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.info {
+  font-weight: 700;
+  margin-left: 94px;
+}
+
+.icons {
+  display: flex;
+  width: 6%;
+  margin-right: 82px;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  font-size: 31px;
+}
